@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問合わせ | アクアパートナー</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-blue-600 text-white sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between py-4">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold">アクアパートナー</a>
+                </div>
+                
+                <nav class="hidden lg:flex space-x-6">
+                    <a href="index.html" class="hover:text-yellow-300 transition">Home</a>
+                    <a href="items/index.html" class="hover:text-yellow-300 transition">お買い得商品</a>
+                    <a href="examples/index.html" class="hover:text-yellow-300 transition">施工事例</a>
+                    <a href="price.html" class="hover:text-yellow-300 transition">水道工事料金</a>
+                    <a href="faq.html" class="hover:text-yellow-300 transition">よくあるご質問</a>
+                    <a href="contact.html" class="hover:text-yellow-300 transition">お問合わせ</a>
+                </nav>
+                
+                <button id="mobile-menu-btn" class="lg:hidden text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <nav id="mobile-menu" class="hidden lg:hidden pb-4">
+                <a href="index.html" class="block py-2 hover:bg-blue-700 px-4 rounded">Home</a>
+                <a href="items/index.html" class="block py-2 hover:bg-blue-700 px-4 rounded">お買い得商品</a>
+                <a href="examples/index.html" class="block py-2 hover:bg-blue-700 px-4 rounded">施工事例</a>
+                <a href="price.html" class="block py-2 hover:bg-blue-700 px-4 rounded">水道工事料金</a>
+                <a href="faq.html" class="block py-2 hover:bg-blue-700 px-4 rounded">よくあるご質問</a>
+                <a href="contact.html" class="block py-2 hover:bg-blue-700 px-4 rounded">お問合わせ</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Title -->
+    <section class="bg-gradient-to-r from-blue-500 to-blue-700 text-white py-12">
+        <div class="container mx-auto px-4">
+            <h1 class="text-3xl md:text-4xl font-bold text-center">お問合わせ</h1>
+            <p class="text-center mt-4">お気軽にお問い合わせください</p>
+        </div>
+    </section>
+
+    <!-- Contact Methods -->
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <div class="grid md:grid-cols-2 gap-6 mb-8">
+                <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                    <div class="text-5xl mb-4">📞</div>
+                    <h3 class="text-xl font-bold mb-3">お電話でのお問い合わせ</h3>
+                    <p class="text-gray-600 mb-4">受付時間: 8:00〜20:00（年中無休）</p>
+                    <a href="tel:0120191249" class="inline-block bg-yellow-400 text-blue-900 text-2xl font-bold px-8 py-4 rounded-full hover:bg-yellow-300 transition shadow-lg">
+                        0120-1912-49
+                    </a>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                    <div class="text-5xl mb-4">✉️</div>
+                    <h3 class="text-xl font-bold mb-3">メールでのお問い合わせ</h3>
+                    <p class="text-gray-600 mb-4">24時間受付中（返信は営業時間内）</p>
+                    <p class="text-gray-700">下記フォームよりお問い合わせください</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="py-12">
+        <div class="container mx-auto px-4 max-w-3xl">
+            <div class="bg-white rounded-lg shadow-md p-6 md:p-8">
+                <h2 class="text-2xl font-bold mb-6">お問い合わせフォーム</h2>
+                
+                <form id="contact-form">
+                    <div class="mb-6">
+                        <label class="block text-gray-700 font-semibold mb-2" for="name">
+                            お名前 <span class="text-red-500">*</span>
+                        </label>
+                        <input 
+                            type="text" 
+                            id="name" 
+                            name="name" 
+                            required
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+                            placeholder="山田太郎"
+                        >
+                    </div>
+
+                    <div class="mb-6">
+                        <label class="block text-gray-700 font-semibold mb-2" for="email">
+                            メールアドレス <span class="text-red-500">*</span>
+                        </label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            required
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+                            placeholder="example@email.com"
+                        >
+                    </div>
+
+                    <div class="mb-6">
+                        <label class="block text-gray-700 font-semibold mb-2" for="phone">
+                            電話番号 <span class="text-red-500">*</span>
+                        </label>
+                        <input 
+                            type="tel" 
+                            id="phone" 
+                            name="phone" 
+                            required
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+                            placeholder="03-1234-5678"
+                        >
+                    </div>
+
+                    <div class="mb-6">
+                        <label class="block text-gray-700 font-semibold mb-2" for="subject">
+                            お問い合わせ種別 <span class="text-red-500">*</span>
+                        </label>
+                        <select 
+                            id="subject" 
+                            name="subject" 
+                            required
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+                        >
+                            <option value="">選択してください</option>
+                            <option value="見積り依頼">見積り依頼</option>
+                            <option value="修理依頼">修理依頼</option>
+                            <option value="リフォーム相談">リフォーム相談</option>
+                            <option value="その他のお問い合わせ">その他のお問い合わせ</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-6">
+                        <label class="block text-gray-700 font-semibold mb-2" for="message">
+                            お問い合わせ内容 <span class="text-red-500">*</span>
+                        </label>
+                        <textarea 
+                            id="message" 
+                            name="message" 
+                            required
+                            rows="6"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+                            placeholder="お困りの内容やご質問を詳しくお書きください"
+                        ></textarea>
+                    </div>
+
+                    <div class="mb-6">
+                        <label class="flex items-start">
+                            <input type="checkbox" required class="mt-1 mr-2">
+                            <span class="text-sm text-gray-700">
+                                <a href="#" class="text-blue-600 hover:underline">プライバシーポリシー</a>に同意します
+                            </span>
+                        </label>
+                    </div>
+
+                    <button 
+                        type="submit" 
+                        class="w-full bg-blue-600 text-white text-lg font-bold px-8 py-4 rounded-lg hover:bg-blue-700 transition shadow-lg"
+                    >
+                        送信する
+                    </button>
+                </form>
+
+                <div class="mt-6 p-4 bg-blue-50 rounded-lg">
+                    <p class="text-sm text-gray-700">
+                        <strong>※</strong> お急ぎの場合は、お電話でのご連絡をおすすめします<br>
+                        <strong>※</strong> メールでのお問い合わせは、1営業日以内に返信いたします
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-10 md:py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-yellow-300 transition">Home</a></li>
+                        <li><a href="corporation.html" class="hover:text-yellow-300 transition">企業情報</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="space-y-2">
+                        <li><a href="items/index.html" class="hover:text-yellow-300 transition">お買い得商品</a></li>
+                        <li><a href="examples/index.html" class="hover:text-yellow-300 transition">施工事例</a></li>
+                        <li><a href="price.html" class="hover:text-yellow-300 transition">水道工事費用</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="space-y-2">
+                        <li><a href="faq.html" class="hover:text-yellow-300 transition">よくあるご質問</a></li>
+                        <li><a href="contact.html" class="hover:text-yellow-300 transition">お問合わせ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-6">
+                <p class="font-bold mb-2">株式会社アクアパートナー</p>
+                <p class="text-sm">〒123-0864</p>
+                <p class="text-sm">東京都足立区鹿浜 4-27-1</p>
+                <p class="text-sm mb-2">03-5837-5061</p>
+                <p class="text-xs text-gray-400 mt-4">Copyright © Aquapartner Co.,Ltd All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Form submission handler (この部分はクライアント側で実際のメール送信APIに接続する必要があります)
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('お問い合わせを受け付けました。実際の実装では、サーバーサイドでメール送信処理が必要です。');
+            // 実際のプロジェクトでは、ここでFormspreeやEmailJSなどのサービスを使用してメール送信を行います
+        });
+    </script>
+</body>
+</html>

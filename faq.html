@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>よくあるご質問 | アクアパートナー</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-blue-600 text-white sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between py-4">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold">アクアパートナー</a>
+                </div>
+                
+                <nav class="hidden lg:flex space-x-6">
+                    <a href="index.html" class="hover:text-yellow-300 transition">Home</a>
+                    <a href="items/index.html" class="hover:text-yellow-300 transition">お買い得商品</a>
+                    <a href="examples/index.html" class="hover:text-yellow-300 transition">施工事例</a>
+                    <a href="price.html" class="hover:text-yellow-300 transition">水道工事料金</a>
+                    <a href="faq.html" class="hover:text-yellow-300 transition">よくあるご質問</a>
+                    <a href="contact.html" class="hover:text-yellow-300 transition">お問合わせ</a>
+                </nav>
+                
+                <button id="mobile-menu-btn" class="lg:hidden text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <nav id="mobile-menu" class="hidden lg:hidden pb-4">
+                <a href="index.html" class="block py-2 hover:bg-blue-700 px-4 rounded">Home</a>
+                <a href="items/index.html" class="block py-2 hover:bg-blue-700 px-4 rounded">お買い得商品</a>
+                <a href="examples/index.html" class="block py-2 hover:bg-blue-700 px-4 rounded">施工事例</a>
+                <a href="price.html" class="block py-2 hover:bg-blue-700 px-4 rounded">水道工事料金</a>
+                <a href="faq.html" class="block py-2 hover:bg-blue-700 px-4 rounded">よくあるご質問</a>
+                <a href="contact.html" class="block py-2 hover:bg-blue-700 px-4 rounded">お問合わせ</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Title -->
+    <section class="bg-gradient-to-r from-blue-500 to-blue-700 text-white py-12">
+        <div class="container mx-auto px-4">
+            <h1 class="text-3xl md:text-4xl font-bold text-center">よくあるご質問</h1>
+            <p class="text-center mt-4">お客様からよくいただく質問をまとめました</p>
+        </div>
+    </section>
+
+    <!-- FAQ Content -->
+    <section class="py-12">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <!-- サービス全般 -->
+            <div class="mb-8">
+                <h2 class="text-2xl font-bold mb-6 pb-2 border-b-2 border-blue-600">サービス全般について</h2>
+                
+                <div class="bg-white rounded-lg shadow-md mb-4">
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg mb-3 flex items-start">
+                            <span class="text-blue-600 mr-2">Q.</span>
+                            <span>出張費や見積りは本当に無料ですか?</span>
+                        </h3>
+                        <div class="pl-7 text-gray-700">
+                            <span class="font-semibold text-blue-600">A.</span> はい、完全無料です。どんな場所でも無料で訪問し、お見積りいたします。お見積り後にキャンセルされても費用は一切かかりません。
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md mb-4">
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg mb-3 flex items-start">
+                            <span class="text-blue-600 mr-2">Q.</span>
+                            <span>対応エリアはどこですか?</span>
+                        </h3>
+                        <div class="pl-7 text-gray-700">
+                            <span class="font-semibold text-blue-600">A.</span> 東京23区および近郊エリアを中心に対応しております。エリア外の場合もご相談ください。
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md mb-4">
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg mb-3 flex items-start">
+                            <span class="text-blue-600 mr-2">Q.</span>
+                            <span>急な水漏れにも対応してもらえますか?</span>
+                        </h3>
+                        <div class="pl-7 text-gray-700">
+                            <span class="font-semibold text-blue-600">A.</span> はい、緊急のトラブルにも迅速に対応いたします。お電話いただければ、最短で当日中にお伺いすることも可能です。
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 料金について -->
+            <div class="mb-8">
+                <h2 class="text-2xl font-bold mb-6 pb-2 border-b-2 border-blue-600">料金について</h2>
+                
+                <div class="bg-white rounded-lg shadow-md mb-4">
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg mb-3 flex items-start">
+                            <span class="text-blue-600 mr-2">Q.</span>
+                            <span>追加料金が発生することはありますか?</span>
+                        </h3>
+                        <div class="pl-7 text-gray-700">
+                            <span class="font-semibold text-blue-600">A.</span> 事前にお見積りした金額から追加料金をいただくことは一切ありません。作業内容に変更がある場合は、必ず事前にご説明し、ご了承をいただいてから作業いたします。
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md mb-4">
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg mb-3 flex items-start">
+                            <span class="text-blue-600 mr-2">Q.</span>
+                            <span>支払い方法は何がありますか?</span>
+                        </h3>
+                        <div class="pl-7 text-gray-700">
+                            <span class="font-semibold text-blue-600">A.</span> 現金、銀行振込、各種クレジットカードに対応しております。詳しくはお見積り時にご説明いたします。
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 作業について -->
+            <div class="mb-8">
+                <h2 class="text-2xl font-bold mb-6 pb-2 border-b-2 border-blue-600">作業について</h2>
+                
+                <div class="bg-white rounded-lg shadow-md mb-4">
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg mb-3 flex items-start">
+                            <span class="text-blue-600 mr-2">Q.</span>
+                            <span>作業時間はどのくらいかかりますか?</span>
+                        </h3>
+                        <div class="pl-7 text-gray-700">
+                            <span class="font-semibold text-blue-600">A.</span> 作業内容によって異なります。蛇口交換などの簡単な作業は1〜2時間、トイレやキッチンのリフォームは1日〜数日程度です。お見積り時に詳しくご説明いたします。
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md mb-4">
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg mb-3 flex items-start">
+                            <span class="text-blue-600 mr-2">Q.</span>
+                            <span>土日祝日も対応していますか?</span>
+                        </h3>
+                        <div class="pl-7 text-gray-700">
+                            <span class="font-semibold text-blue-600">A.</span> はい、土日祝日も通常通り営業しております。お気軽にお問い合わせください。
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md mb-4">
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg mb-3 flex items-start">
+                            <span class="text-blue-600 mr-2">Q.</span>
+                            <span>工事後の保証はありますか?</span>
+                        </h3>
+                        <div class="pl-7 text-gray-700">
+                            <span class="font-semibold text-blue-600">A.</span> 工事内容により、メーカー保証や当社独自の保証をお付けしております。詳しくはお見積り時にご説明いたします。
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- その他 -->
+            <div class="mb-8">
+                <h2 class="text-2xl font-bold mb-6 pb-2 border-b-2 border-blue-600">その他</h2>
+                
+                <div class="bg-white rounded-lg shadow-md mb-4">
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg mb-3 flex items-start">
+                            <span class="text-blue-600 mr-2">Q.</span>
+                            <span>相談だけでもいいですか?</span>
+                        </h3>
+                        <div class="pl-7 text-gray-700">
+                            <span class="font-semibold text-blue-600">A.</span> もちろんです!「こんなことはできる?」「だいたいいくらくらい?」など、どんなご相談でもお気軽にお問い合わせください。
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md mb-4">
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg mb-3 flex items-start">
+                            <span class="text-blue-600 mr-2">Q.</span>
+                            <span>マンションやアパートでも対応できますか?</span>
+                        </h3>
+                        <div class="pl-7 text-gray-700">
+                            <span class="font-semibold text-blue-600">A.</span> はい、戸建て、マンション、アパート問わず対応可能です。管理会社への確認が必要な場合は、その旨お伝えいたします。
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-blue-50 border-l-4 border-blue-400 p-6 mb-8">
+                <p class="font-semibold mb-2">その他のご質問は、お気軽にお問い合わせください</p>
+                <p class="text-sm text-gray-700">専門スタッフが丁寧にお答えいたします</p>
+            </div>
+
+            <div class="text-center">
+                <a href="tel:0120191249" class="inline-block bg-yellow-400 text-blue-900 text-xl md:text-2xl font-bold px-8 md:px-12 py-3 md:py-4 rounded-full hover:bg-yellow-300 transition shadow-lg mb-4">
+                    お電話: 0120-1912-49
+                </a>
+                <br>
+                <a href="contact.html" class="inline-block bg-blue-600 text-white text-lg px-8 py-3 rounded-lg hover:bg-blue-700 transition">
+                    メールでお問い合わせ →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-10 md:py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-yellow-300 transition">Home</a></li>
+                        <li><a href="corporation.html" class="hover:text-yellow-300 transition">企業情報</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="space-y-2">
+                        <li><a href="items/index.html" class="hover:text-yellow-300 transition">お買い得商品</a></li>
+                        <li><a href="examples/index.html" class="hover:text-yellow-300 transition">施工事例</a></li>
+                        <li><a href="price.html" class="hover:text-yellow-300 transition">水道工事費用</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="space-y-2">
+                        <li><a href="faq.html" class="hover:text-yellow-300 transition">よくあるご質問</a></li>
+                        <li><a href="contact.html" class="hover:text-yellow-300 transition">お問合わせ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-6">
+                <p class="font-bold mb-2">株式会社アクアパートナー</p>
+                <p class="text-sm">〒123-0864</p>
+                <p class="text-sm">東京都足立区鹿浜 4-27-1</p>
+                <p class="text-sm mb-2">03-5837-5061</p>
+                <p class="text-xs text-gray-400 mt-4">Copyright © Aquapartner Co.,Ltd All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

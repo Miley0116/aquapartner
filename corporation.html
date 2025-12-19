@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>企業情報 | アクアパートナー</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-blue-600 text-white sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between py-4">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold">アクアパートナー</a>
+                </div>
+                
+                <nav class="hidden lg:flex space-x-6">
+                    <a href="index.html" class="hover:text-yellow-300 transition">Home</a>
+                    <a href="items/index.html" class="hover:text-yellow-300 transition">お買い得商品</a>
+                    <a href="examples/index.html" class="hover:text-yellow-300 transition">施工事例</a>
+                    <a href="price.html" class="hover:text-yellow-300 transition">水道工事料金</a>
+                    <a href="faq.html" class="hover:text-yellow-300 transition">よくあるご質問</a>
+                    <a href="contact.html" class="hover:text-yellow-300 transition">お問合わせ</a>
+                </nav>
+                
+                <button id="mobile-menu-btn" class="lg:hidden text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <nav id="mobile-menu" class="hidden lg:hidden pb-4">
+                <a href="index.html" class="block py-2 hover:bg-blue-700 px-4 rounded">Home</a>
+                <a href="items/index.html" class="block py-2 hover:bg-blue-700 px-4 rounded">お買い得商品</a>
+                <a href="examples/index.html" class="block py-2 hover:bg-blue-700 px-4 rounded">施工事例</a>
+                <a href="price.html" class="block py-2 hover:bg-blue-700 px-4 rounded">水道工事料金</a>
+                <a href="faq.html" class="block py-2 hover:bg-blue-700 px-4 rounded">よくあるご質問</a>
+                <a href="contact.html" class="block py-2 hover:bg-blue-700 px-4 rounded">お問合わせ</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Title -->
+    <section class="bg-gradient-to-r from-blue-500 to-blue-700 text-white py-12">
+        <div class="container mx-auto px-4">
+            <h1 class="text-3xl md:text-4xl font-bold text-center">企業情報</h1>
+            <p class="text-center mt-4">株式会社アクアパートナー</p>
+        </div>
+    </section>
+
+    <!-- Company Info -->
+    <section class="py-12">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <div class="bg-white rounded-lg shadow-md p-6 md:p-8 mb-8">
+                <h2 class="text-2xl font-bold mb-6 pb-2 border-b-2 border-blue-600">会社概要</h2>
+                <table class="w-full">
+                    <tbody>
+                        <tr class="border-b">
+                            <th class="py-4 px-4 bg-gray-50 text-left font-semibold w-1/3">会社名</th>
+                            <td class="py-4 px-4">株式会社アクアパートナー</td>
+                        </tr>
+                        <tr class="border-b">
+                            <th class="py-4 px-4 bg-gray-50 text-left font-semibold">所在地</th>
+                            <td class="py-4 px-4">
+                                〒123-0864<br>
+                                東京都足立区鹿浜 4-27-1
+                            </td>
+                        </tr>
+                        <tr class="border-b">
+                            <th class="py-4 px-4 bg-gray-50 text-left font-semibold">電話番号</th>
+                            <td class="py-4 px-4">
+                                <a href="tel:0358375061" class="text-blue-600 hover:underline">03-5837-5061</a><br>
+                                <span class="text-sm text-gray-600">フリーダイヤル: </span>
+                                <a href="tel:0120191249" class="text-blue-600 hover:underline font-semibold">0120-1912-49</a>
+                            </td>
+                        </tr>
+                        <tr class="border-b">
+                            <th class="py-4 px-4 bg-gray-50 text-left font-semibold">営業時間</th>
+                            <td class="py-4 px-4">8:00〜20:00（年中無休）</td>
+                        </tr>
+                        <tr class="border-b">
+                            <th class="py-4 px-4 bg-gray-50 text-left font-semibold">事業内容</th>
+                            <td class="py-4 px-4">
+                                ・水道工事<br>
+                                ・水まわりのリフォーム<br>
+                                ・トイレ・キッチン・浴室のリフォーム<br>
+                                ・給湯器の交換・修理<br>
+                                ・水漏れ・詰まりの修理
+                            </td>
+                        </tr>
+                        <tr class="border-b">
+                            <th class="py-4 px-4 bg-gray-50 text-left font-semibold">対応エリア</th>
+                            <td class="py-4 px-4">東京23区および近郊エリア</td>
+                        </tr>
+                        <tr>
+                            <th class="py-4 px-4 bg-gray-50 text-left font-semibold">取り扱いメーカー</th>
+                            <td class="py-4 px-4">
+                                TOTO、LIXIL、Panasonic、Rinnai、NORITZ、Cleanup など
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-6 md:p-8 mb-8">
+                <h2 class="text-2xl font-bold mb-6 pb-2 border-b-2 border-blue-600">アクアパートナーの特徴</h2>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="text-center">
+                        <div class="text-5xl mb-3">💰</div>
+                        <h3 class="font-bold mb-2">明朗会計</h3>
+                        <p class="text-sm text-gray-700">出張・見積り無料、事前見積りで追加請求なし</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-5xl mb-3">👨‍🔧</div>
+                        <h3 class="font-bold mb-2">正社員対応</h3>
+                        <p class="text-sm text-gray-700">受付から作業まで経験豊富な正社員が対応</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-5xl mb-3">⚡</div>
+                        <h3 class="font-bold mb-2">迅速対応</h3>
+                        <p class="text-sm text-gray-700">緊急のトラブルにも最短当日対応可能</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-6 md:p-8">
+                <h2 class="text-2xl font-bold mb-6 pb-2 border-b-2 border-blue-600">アクセス</h2>
+                <p class="text-gray-700 mb-4">
+                    〒123-0864<br>
+                    東京都足立区鹿浜 4-27-1
+                </p>
+                <div class="bg-gray-100 h-64 rounded-lg flex items-center justify-center text-gray-500">
+                    地図表示エリア（Google Mapsなどを埋め込み）
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="tel:0120191249" class="inline-block bg-yellow-400 text-blue-900 text-xl md:text-2xl font-bold px-8 md:px-12 py-3 md:py-4 rounded-full hover:bg-yellow-300 transition shadow-lg mb-4">
+                    お電話: 0120-1912-49
+                </a>
+                <br>
+                <a href="contact.html" class="inline-block bg-blue-600 text-white text-lg px-8 py-3 rounded-lg hover:bg-blue-700 transition">
+                    お問い合わせフォーム →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-10 md:py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-yellow-300 transition">Home</a></li>
+                        <li><a href="corporation.html" class="hover:text-yellow-300 transition">企業情報</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="space-y-2">
+                        <li><a href="items/index.html" class="hover:text-yellow-300 transition">お買い得商品</a></li>
+                        <li><a href="examples/index.html" class="hover:text-yellow-300 transition">施工事例</a></li>
+                        <li><a href="price.html" class="hover:text-yellow-300 transition">水道工事費用</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="space-y-2">
+                        <li><a href="faq.html" class="hover:text-yellow-300 transition">よくあるご質問</a></li>
+                        <li><a href="contact.html" class="hover:text-yellow-300 transition">お問合わせ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-6">
+                <p class="font-bold mb-2">株式会社アクアパートナー</p>
+                <p class="text-sm">〒123-0864</p>
+                <p class="text-sm">東京都足立区鹿浜 4-27-1</p>
+                <p class="text-sm mb-2">03-5837-5061</p>
+                <p class="text-xs text-gray-400 mt-4">Copyright © Aquapartner Co.,Ltd All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

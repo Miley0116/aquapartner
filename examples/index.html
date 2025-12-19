@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>施工事例 | アクアパートナー</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-blue-600 text-white sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between py-4">
+                <div class="flex items-center">
+                    <a href="../index.html" class="text-2xl font-bold">アクアパートナー</a>
+                </div>
+                
+                <nav class="hidden lg:flex space-x-6">
+                    <a href="../index.html" class="hover:text-yellow-300 transition">Home</a>
+                    <a href="../items/index.html" class="hover:text-yellow-300 transition">お買い得商品</a>
+                    <a href="index.html" class="hover:text-yellow-300 transition">施工事例</a>
+                    <a href="../price.html" class="hover:text-yellow-300 transition">水道工事料金</a>
+                    <a href="../faq.html" class="hover:text-yellow-300 transition">よくあるご質問</a>
+                    <a href="../contact.html" class="hover:text-yellow-300 transition">お問合わせ</a>
+                </nav>
+                
+                <button id="mobile-menu-btn" class="lg:hidden text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <nav id="mobile-menu" class="hidden lg:hidden pb-4">
+                <a href="../index.html" class="block py-2 hover:bg-blue-700 px-4 rounded">Home</a>
+                <a href="../items/index.html" class="block py-2 hover:bg-blue-700 px-4 rounded">お買い得商品</a>
+                <a href="index.html" class="block py-2 hover:bg-blue-700 px-4 rounded">施工事例</a>
+                <a href="../price.html" class="block py-2 hover:bg-blue-700 px-4 rounded">水道工事料金</a>
+                <a href="../faq.html" class="block py-2 hover:bg-blue-700 px-4 rounded">よくあるご質問</a>
+                <a href="../contact.html" class="block py-2 hover:bg-blue-700 px-4 rounded">お問合わせ</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Title -->
+    <section class="bg-gradient-to-r from-blue-500 to-blue-700 text-white py-12">
+        <div class="container mx-auto px-4">
+            <h1 class="text-3xl md:text-4xl font-bold text-center">施工事例</h1>
+            <p class="text-center mt-4">アクアパートナーの施工実績をご紹介します</p>
+        </div>
+    </section>
+
+    <!-- Examples Grid -->
+    <section class="py-12 md:py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Toilet Example -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+                    <div class="bg-gradient-to-br from-purple-100 to-purple-200 h-64 flex items-center justify-center text-gray-500">
+                        <span class="text-7xl">🚽</span>
+                    </div>
+                    <div class="p-6">
+                        <span class="inline-block bg-purple-100 text-purple-800 text-xs px-3 py-1 rounded-full mb-3">トイレ</span>
+                        <h3 class="text-xl font-bold mb-3">和式から洋式へのトイレリフォーム</h3>
+                        <p class="text-gray-700 mb-4">
+                            古い和式トイレを最新の節水型洋式トイレにリフォーム。快適性と清潔性が大幅に向上しました。
+                        </p>
+                        <div class="flex items-center justify-between text-sm text-gray-600 mb-4">
+                            <span>工期: 1日</span>
+                            <span>費用: ¥100,000〜</span>
+                        </div>
+                        <a href="detail-1.html" class="block w-full text-center bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition">
+                            詳細を見る →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Kitchen Example -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+                    <div class="bg-gradient-to-br from-orange-100 to-orange-200 h-64 flex items-center justify-center text-gray-500">
+                        <span class="text-7xl">🔧</span>
+                    </div>
+                    <div class="p-6">
+                        <span class="inline-block bg-orange-100 text-orange-800 text-xs px-3 py-1 rounded-full mb-3">キッチン</span>
+                        <h3 class="text-xl font-bold mb-3">システムキッチン入れ替え工事</h3>
+                        <p class="text-gray-700 mb-4">
+                            古くなったキッチンを最新のシステムキッチンに。収納力と機能性が大幅アップ!
+                        </p>
+                        <div class="flex items-center justify-between text-sm text-gray-600 mb-4">
+                            <span>工期: 2日</span>
+                            <span>費用: ¥250,000〜</span>
+                        </div>
+                        <a href="detail-2.html" class="block w-full text-center bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition">
+                            詳細を見る →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Bathroom Example -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+                    <div class="bg-gradient-to-br from-blue-100 to-blue-200 h-64 flex items-center justify-center text-gray-500">
+                        <span class="text-7xl">🛁</span>
+                    </div>
+                    <div class="p-6">
+                        <span class="inline-block bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full mb-3">浴室・洗面所</span>
+                        <h3 class="text-xl font-bold mb-3">ユニットバス交換工事</h3>
+                        <p class="text-gray-700 mb-4">
+                            古いお風呂を最新のユニットバスに交換。保温性能が向上し、光熱費も削減!
+                        </p>
+                        <div class="flex items-center justify-between text-sm text-gray-600 mb-4">
+                            <span>工期: 3日</span>
+                            <span>費用: ¥160,000〜</span>
+                        </div>
+                        <a href="detail-3.html" class="block w-full text-center bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition">
+                            詳細を見る →
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <p class="text-gray-700 mb-6">その他の施工事例はブログでも公開中!</p>
+                <a href="http://ameblo.jp/aquapartner1912/" target="_blank" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition">
+                    ブログを見る →
+                </a>
+            </div>
+
+            <div class="text-center mt-8">
+                <a href="tel:0120191249" class="inline-block bg-yellow-400 text-blue-900 text-xl md:text-2xl font-bold px-8 md:px-12 py-3 md:py-4 rounded-full hover:bg-yellow-300 transition shadow-lg">
+                    無料見積り: 0120-1912-49
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-10 md:py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <ul class="space-y-2">
+                        <li><a href="../index.html" class="hover:text-yellow-300 transition">Home</a></li>
+                        <li><a href="../corporation.html" class="hover:text-yellow-300 transition">企業情報</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="space-y-2">
+                        <li><a href="../items/index.html" class="hover:text-yellow-300 transition">お買い得商品</a></li>
+                        <li><a href="index.html" class="hover:text-yellow-300 transition">施工事例</a></li>
+                        <li><a href="../price.html" class="hover:text-yellow-300 transition">水道工事費用</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="space-y-2">
+                        <li><a href="../faq.html" class="hover:text-yellow-300 transition">よくあるご質問</a></li>
+                        <li><a href="../contact.html" class="hover:text-yellow-300 transition">お問合わせ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-6">
+                <p class="font-bold mb-2">株式会社アクアパートナー</p>
+                <p class="text-sm">〒123-0864</p>
+                <p class="text-sm">東京都足立区鹿浜 4-27-1</p>
+                <p class="text-sm mb-2">03-5837-5061</p>
+                <p class="text-xs text-gray-400 mt-4">Copyright © Aquapartner Co.,Ltd All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

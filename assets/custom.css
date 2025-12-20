@@ -1,0 +1,151 @@
+@charset "utf-8";
+
+body { font-family: 'Roboto','Verdana',YuGothic,'Yu Gothic','Yu Mincho Light','YuMincho','Yu Mincho','游明朝体','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif !important; }
+
+.blue { font-weight: bold; color :#107CDF !important; }
+
+.sky { font-weight: bold; color :#30b7c4 !important; }
+
+.red { font-weight: bold; color :#990000 !important; }
+
+.orange { font-weight: bold; font-size: 44px; color :#f89300 !important; }
+
+.sale { font-family: "Nunito", sans-serif; font-size: 48px; color :#990000 !important; }
+
+.bold { font-weight: bold; !important; }
+
+.center {text-align: center; !important; }
+
+.right {text-align: right; !important; }
+
+.wpo-site-header .navbar-header .navbar-brand img {
+    max-width: 250px;
+        padding: 0px 30px 0px 0px;
+}
+
+@media (max-width: 1199px) {
+    .wpo-site-header #navbar > ul > li > a {
+        padding: 20px 10px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .wpo-site-header #navbar > ul > li > a {
+        font-family: 'Roboto','Verdana',YuGothic,'Yu Gothic','Yu Mincho Light','YuMincho','Yu Mincho','游明朝体','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif !important;
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 991px) {
+    .wpo-site-header #navbar > ul > li a {
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+.maker-ul {
+    display: flex;
+    justify-content: center;
+    margin-bottom:22px;
+}
+
+.maker-li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.siteseal {
+  width: 130px;
+  height: 50px;
+  float: right;
+  margin: 10px 5px 0px 0px;
+}
+
+.suizo-float {
+    float: right;
+    margin-left: 20px;
+}
+
+.section-padding { padding: 30px 0; }
+
+.wpo-section-title { margin-bottom: 20px; text-align: center; }
+
+.service-wrap .owl-dots { text-align: center; margin-top: 0px; }
+
+.service-wrap .single-card {
+    margin-bottom: 10px;
+    border-top: 1px solid #E3EAF1;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    text-align: left;
+    padding-top: 60px;
+    padding-right: 55px;
+    padding-left: 55px;
+}
+
+.plummet-team-section-s2 .team-single-item .text {
+    margin-top: 0px;
+    text-align: center;
+    border: 1px solid #E3EAF1;
+    border-radius: 7px;
+    padding: 13px 0;
+}
+
+.wpo-site-footer .wpo-upper-footer { padding: 30px 0; }
+
+@media (max-width: 991px) {
+    .wpo-site-footer .wpo-upper-footer .col {
+        min-height: 30px;
+        margin-bottom: 0px;
+    }
+}
+
+.wpo-page-title .wpo-breadcumb-wrap h2 {
+    font-size: 50px;
+    color: #fff;
+    line-height: 60px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: 400;
+}
+
+.team-pg-area .exprience-area { padding-top: 0px; }
+
+.team-pg-area .education-area ul li:before {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #107CDF;
+    content: "";
+}
+
+.team-pg-area .ex-wiget { padding-top: 0px; }
+
+.copyright {
+    font-size: 15px;
+    font-size: 0.9375rem;
+    margin: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.margin-top5px { margin-top:5px; }
+.margin-top10px { margin-top:10px; }
+.margin-top15px { margin-top:15px; }
+.margin-top20px { margin-top:20px; }
+.margin-top25px { margin-top:25px; }
+.margin-top30px { margin-top:30px; }
+
+.margin-bottom5px { margin-bottom:5px; }
+.margin-bottom10px { margin-bottom:10px; }
+.margin-bottom15px { margin-bottom:15px; }
+.margin-bottom20px { margin-bottom:20px; }
+.margin-bottom25px { margin-bottom:25px; }
+.margin-bottom30px { margin-bottom:30px; }
+.margin-thanks { margin-bottom:60px; }
+

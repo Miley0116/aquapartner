@@ -1,0 +1,23 @@
+sc_p_b="https://seal.cloudsecure.co.jp/webSiteProfileCloudSSL.php";
+sc_si_b="https://seal.cloudsecure.co.jp/seal.cgi";
+hn=window.location.hostname;
+w_w=600;
+w_h=580;
+i_w=130;
+i_h=50;
+brand="coressl";
+sc_p=sc_p_b+"?p1="+hn;
+sc_si=sc_si_b+"?p1="+hn+"&p2="+i_w+"-"+i_h+"-"+brand;
+function op(){
+    if(screen!=null){if(screen.height<850){w_h=screen.height-50;}}
+    window.open(sc_p,'SC_P',"status=1,location=0,scrollbars=1,resizable=1,width="+w_w+",height="+w_h);
+    return false;
+}
+if (document.currentScript) {
+    const current = document.currentScript;
+    window.addEventListener('load', function() {
+        current.parentElement.insertAdjacentHTML("afterbegin", "<a href=\""+sc_p+"\" onclick=\"return op();\"><img src=\""+sc_si+"\" width=\""+i_w+"\" height=\""+i_h+"\"></a>");
+    })
+} else {
+    document.write("<a href=\""+sc_p+"\" onclick=\"return op();\"><img src=\""+sc_si+"\" width=\""+i_w+"\" height=\""+i_h+"\"></a>");
+}
